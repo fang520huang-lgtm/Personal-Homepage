@@ -1,36 +1,38 @@
-# Fang OS — Personal Homepage
+# Fang OS — Windows-Style Personal Homepage
 
-A dependency-free, Windows-inspired personal homepage built with plain HTML, CSS, and JavaScript. It presents a boot sequence, lock screen, bilingual desktop, draggable application windows, and a custom interactive terminal.
+Fang OS is an interactive personal homepage presented as a fictional Windows-style operating system. It is not a real operating system or command-line environment—the desktop and simulated terminal provide a familiar, playful way to explore a personal portfolio.
 
-![Fang OS terminal demo](assets/demo/personal-homepage-terminal-demo.png)
+![Fang OS personal homepage](assets/demo/personal-homepage-terminal-demo.png)
 
-The same recording is also available as an [H.264 MP4 video](assets/demo/personal-homepage-terminal-demo.mp4) and a [widely compatible GIF](assets/demo/personal-homepage-terminal-demo.gif).
+## What This Homepage Presents
 
-## Features
+- **Profile** — name, academic or professional role, location, and a short personal introduction
+- **Technical skills** — programming languages, tools, development interests, and practical capabilities
+- **Projects** — selected work with concise descriptions, technology stacks, repository links, and live demonstrations where available
+- **Contact details** — email, WeChat, and GitHub profile
 
-- English startup and lock screen, with English as the default desktop language
-- Chinese/English switching from the taskbar input-method indicator
-- Closable bilingual language hint shown again after every refresh
-- Desktop icons with selection, drag, rename, context-menu, and double-click actions
-- Draggable, resizable, minimizable, maximizable, and closable windows
-- Start menu, taskbar, clock, wallpaper switching, sleep, restart, and shutdown states
-- Custom terminal with commands such as `help`, `neofetch`, `projects`, `skills`, and `contact`
-- Responsive layout and a hidden blue-screen easter egg
+The same information can be explored through desktop application windows or commands in the simulated terminal.
 
-## Live Demo
+## Core Features
 
-This repository contains the complete website. After GitHub Pages is enabled, the published site can be linked here.
+- A fictional Windows-inspired interface with a boot sequence, lock screen, desktop, Start menu, taskbar, and application windows
+- Dedicated portfolio applications for the profile, skills, projects, and contact details
+- A simulated terminal with commands such as `about`, `projects`, `skills`, and `contact`
+- Familiar desktop interactions, including movable icons and draggable, resizable, minimizable, and maximizable windows
+- English and Chinese interfaces, switched from the input-method indicator in the lower-right corner
+- A fully static implementation built with plain HTML, CSS, and JavaScript, with no runtime dependencies or build step
+- Small interactive details and easter eggs that make the portfolio feel like a complete fictional desktop environment
 
 ## Run Locally
 
-No build step or package installation is required.
+No installation or build process is required.
 
 1. Clone or download the repository.
 2. Open `index.html` in Chrome or Edge.
 
-For consistent local URLs, you can also serve the folder with any static web server, such as the Live Server extension in Visual Studio Code.
+You can also serve the directory with any static web server, such as the Live Server extension for Visual Studio Code.
 
-## Customize
+## Customize the Portfolio
 
 Edit the `USER` object near the top of `js/app.js`. It is the single source of truth for:
 
@@ -39,7 +41,7 @@ Edit the `USER` object near the top of `js/app.js`. It is the single source of t
 - Skill tags and capability descriptions
 - Project names, summaries, technology stacks, and links
 
-The desktop applications and terminal read from the same data, so changes stay synchronized.
+The desktop applications and terminal both read from this data, so portfolio content stays synchronized throughout the interface.
 
 ## Project Structure
 
@@ -74,6 +76,15 @@ Released under the [MIT License](LICENSE).
 
 ## 中文说明
 
-Fang OS 是一个使用原生 HTML、CSS 和 JavaScript 编写的 Windows 风格个人主页，无需安装依赖或执行构建命令。页面包含英文开机与锁屏、默认英文桌面、中英切换、桌面图标、窗口系统、任务栏、自研终端和蓝屏彩蛋。
+Fang OS 是一个伪装成 Windows 风格虚拟系统的个人主页。它不是真正的操作系统或命令行工具，而是借助开机、锁屏、桌面、任务栏、应用窗口和模拟终端，为个人介绍提供更有趣的展示方式。
 
-需要修改个人信息时，只需编辑 `js/app.js` 顶部的 `USER` 对象；个人简历、项目、技能、联系方式和终端中的内容会自动保持一致。
+主页主要展示以下个人内容：
+
+- **个人简介**：姓名、学习或工作身份、所在地与个人介绍
+- **技术技能**：编程语言、开发工具、技术方向与实践能力
+- **项目经历**：项目简介、技术栈、GitHub 仓库和可用的在线展示
+- **联系方式**：邮箱、微信和 GitHub 主页
+
+访客既可以打开桌面上的应用查看这些内容，也可以在模拟终端中输入 `about`、`projects`、`skills`、`contact` 等命令进行浏览。右下角的输入法图标可用于切换中文和英文界面。
+
+项目使用原生 HTML、CSS 和 JavaScript 编写，无需安装依赖或执行构建命令。需要替换个人资料时，只需编辑 `js/app.js` 顶部的 `USER` 对象，桌面应用和终端内容会自动保持一致。
