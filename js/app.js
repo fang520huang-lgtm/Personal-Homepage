@@ -192,7 +192,6 @@ let bsodTimer = null;
 function triggerBsod() {
   stopMatrix();
   hideStartMenu();
-  closeAllWindows();
   // Briefly block the main thread to imitate an unresponsive application.
   const freeze = $('#freeze-layer');
   freeze.classList.remove('hidden');
