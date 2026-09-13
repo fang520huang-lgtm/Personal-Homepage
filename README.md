@@ -6,8 +6,6 @@ Fang OS is an interactive personal homepage presented as a fictional Windows-sty
 
 [![Fang OS personal homepage](assets/demo/personal-homepage-terminal-demo.png)](https://fang520huang-lgtm.github.io/Personal-Homepage/)
 
-[Full English walkthrough](assets/demo/personal-homepage-full-demo.mp4) · [Language-switch walkthrough](assets/demo/personal-homepage-language-switch-demo.mp4)
-
 ## What This Homepage Presents
 
 - **Profile** — name, academic or professional role, location, and a short personal introduction
@@ -56,8 +54,6 @@ The desktop applications and terminal both read from this data, so portfolio con
 ├── assets/
 │   ├── avatar.jpg
 │   └── demo/
-│       ├── personal-homepage-full-demo.mp4
-│       ├── personal-homepage-language-switch-demo.mp4
 │       ├── personal-homepage-desktop.png
 │       ├── personal-homepage-terminal-demo.gif
 │       ├── personal-homepage-terminal-demo.mp4
@@ -87,8 +83,6 @@ Released under the [MIT License](LICENSE).
 Fang OS 是一个伪装成 Windows 风格虚拟系统的个人主页。它不是真正的操作系统或命令行工具，而是借助开机、锁屏、桌面、任务栏、应用窗口和模拟终端，为个人介绍提供更有趣的展示方式。
 
 ### [打开在线演示 →](https://fang520huang-lgtm.github.io/Personal-Homepage/)
-
-[完整英文演示](assets/demo/personal-homepage-full-demo.mp4) · [中途切换中文演示](assets/demo/personal-homepage-language-switch-demo.mp4)
 
 主页主要展示以下个人内容：
 
