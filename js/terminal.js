@@ -42,7 +42,8 @@ let cwdSegs = [];
 
 function cwdPath() {
   const segs = cwdSegs.length ? '\\' + cwdSegs.join('\\') : '';
-  return 'C:\\Users\\' + userValue('name') + segs;
+  const folderName = String(userValue('name')).replace(/\s+/g, '');
+  return 'C:\\Users\\' + folderName + segs;
 }
 
 function fileContents() {
